@@ -59,7 +59,7 @@ a{
     filter:drop-shadow(0 0 0.2rem rgb(0, 0, 0)); /* Skyggeeffekt */
     grid-template-columns: 1fr 1fr 1fr; /* Tre kolonner med lik bredde */
     grid-template-rows: auto; /* Automatisk høyde for rader */
-    grid-template-areas: "burger kebab pizza"; /* Områder for bildene */
+    grid-template-areas: "burger pizza kebab"; /* Områder for bildene */
     grid-gap: 50px; /* Avstand mellom bildene */
 }
 
@@ -77,6 +77,7 @@ a{
     width: 300px; /* Bredde */
     height: auto; /* Automatisk høyde */
     border-radius: 10px; /* Avrunde hjørner */
+    padding-right: 100px; /* plassering på bilde, endret posisjonen til knapp lenger til venstre*/
 }
 
 /* Stiler for pizzabildet */
