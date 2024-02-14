@@ -1,0 +1,149 @@
+/* Nullstill alle padding og margin for alle elementer */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Stiler for body-elementet */
+body{
+    background-color:#ffffff; /* Bakgrunnsfarge */
+    overflow-x: hidden; /* Skjul horisontal rulling */
+    overflow-y: auto; /* Tillat vertikal rulling hvis nødvendig */
+    color: white; /* Tekstfarge */
+}
+
+/* Stiler for navigasjonsfeltet */
+.navbar{
+    display: grid; /* Bruk grid-layout */
+    grid-template-columns: 1fr; /* lager en kolonne med grid*/
+    grid-template-rows: auto auto; /* Automatisk høyde for rader */
+    background-color: rgb(0, 0, 0); /* Bakgrunnsfarge */
+    padding: 30px; /*Padding fra toppen, for fargen til navigasjonsbaren*/
+    border-end-end-radius: 7px; /* Avrunde hjørner */
+    border-end-start-radius: 7px; /* Avrunde hjørner */
+    grid-row: 2; /* Plassering på rutenettet */
+}
+
+/* Stiler for lenkene */
+#home{
+    padding-right: 550px; /* plassering på knapp, endret posisjonen til knapp lenger til venstre*/
+}
+
+#contact{
+   padding-left: 550px; /* plassering på knapp, endret posisjonen til knapp lenger til høyre*/
+}
+
+/* Stiler for overskrift */
+h1{
+    display: flex; /* Bruk flex-boksen for sentrering */
+    justify-content: center; /* Sentrer innholdet */
+    color: white; /* Tekstfarge */
+    letter-spacing: 0.2cap; /* Bokstavavstand */
+    filter:drop-shadow(0 0 0.07rem rgb(0, 0, 0)); /* Skyggeeffekt */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Skrifttype */
+}
+
+/* Stiler for lenker */
+a{
+    text-decoration: none; /* Fjern understrek */
+    color: rgb(255, 255, 255); /* Tekstfarge */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial; /* Skrifttype */
+}
+
+/* Stiler for bildene */
+.bilder{
+    position: relative; /* Relativ posisjonering */
+    top: 50px; /* Avstand fra toppen */
+    left: 50px; /* Avstand fra venstre */
+    display: grid; /* Bruk grid-layout */
+    filter:drop-shadow(0 0 0.2rem rgb(0, 0, 0)); /* Skyggeeffekt */
+    grid-template-columns: 1fr 1fr 1fr; /* Tre kolonner med lik bredde */
+    grid-template-rows: auto; /* Automatisk høyde for rader */
+    grid-template-areas: "burger kebab pizza"; /* Områder for bildene */
+    grid-gap: 50px; /* Avstand mellom bildene */
+}
+
+/* Stiler for burgerbildet */
+#Burger{
+    grid-area: burger; /* Angir plassering i grid-området */
+    width: 260px; /* Bredde */
+    height: auto; /* Automatisk høyde */
+    border-radius: 10px; /* Avrunde hjørner */
+}
+
+/* Stiler for kebabbildet */
+#Kebab{
+    grid-area: kebab; /* Angir plassering i grid-området */
+    width: 300px; /* Bredde */
+    height: auto; /* Automatisk høyde */
+    border-radius: 10px; /* Avrunde hjørner */
+}
+
+/* Stiler for pizzabildet */
+#Pizza{
+    grid-area: pizza; /* Angir plassering i grid-området */
+    width: 290px; /* Bredde */
+    height: auto; /* Automatisk høyde */
+    border-radius: 10px; /* Avrunde hjørner */
+}
+
+/* Stiler for anmeldelsesmeny for burger */
+.burgerreview{
+    position: absolute; /* Absolutt posisjonering */
+    top: 420px; /* Avstand fra toppen */
+    left: 70px; /* Avstand fra venstre */
+}
+
+#reviewBurger{
+    position: relative; /* Relativ posisjonering */
+    bottom: 40px; /* Avstand fra bunnen */
+    right: 120px; /* Avstand fra høyre */
+}
+
+/* Stiler for anmeldelsesmeny for kebab */
+.kebabreview{
+    position: absolute; /* Absolutt posisjonering */
+    left: 530px; /* Avstand fra venstre */
+    top: 420px; /* Avstand fra toppen */
+}
+
+#reviewKebab{
+    position: relative; /* Relativ posisjonering */
+    bottom: 40px; /* Avstand fra bunnen */
+    right: 115px; /* Avstand fra høyre */
+}
+
+/* Stiler for anmeldelsesmeny for pizza */
+.pizzareview{
+    position: absolute; /* Absolutt posisjonering */
+    left: 970px; /* Avstand fra venstre */
+    top: 420px; /* Avstand fra toppen */
+}
+
+#reviewPizza{
+    position: relative; /* Relativ posisjonering */
+    bottom: 40px; /* Avstand fra bunnen */
+    right: 115px; /* Avstand fra høyre */
+}
+
+/* Stiler for responsboksene */
+#burgerResponse, #kebabResponse, #pizzaResponse{
+    max-width: 230px; /* Maksimal bredde */
+    word-wrap: break-word; /* Bryt ord ved behov */
+    color: black; /* Tekstfarge */
+    position: relative; /* Relativ posisjonering */
+    top: 5px; /* Avstand fra toppen */
+}
+
+/* Stiler for knapper */
+button{
+    position: relative; /* Relativ posisjonering */
+    right: 90px; /* Avstand fra høyre */
+}
+
+/* Stiler for foten */
+footer p{
+    position: absolute; /* Absolutt posisjonering */
+    top: 550px; /* Avstand fra toppen */
+    color: black; /* Tekstfarge */
+}

@@ -1,0 +1,87 @@
+/* Nullstill alle padding og margin for alle elementer */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Stiler for body-elementet */
+body{
+    background-color:#ffffff; /* Bakgrunnsfarge */
+    overflow-x: hidden; /* Skjul horisontal rulling */
+    overflow-y: auto; /* Tillat vertikal rulling hvis nødvendig */
+    color: white; /* Tekstfarge */
+}
+
+/* Stiler for navigasjonsfeltet */
+.navbar{
+    display: grid; /* Bruk grid-layout */
+    grid-template-columns: 1fr; /* lager en kolonne med grid */
+    grid-template-rows: auto auto; /* Automatisk høyde for rader */
+    background-color: rgb(0, 0, 0); /* Bakgrunnsfarge */
+    padding: 30px; /*Padding fra toppen, for fargen til navigasjonsbaren*/
+    border-end-end-radius: 7px; /* Avrundede hjørner */
+    border-end-start-radius: 7px; /* Avrundede hjørner */
+    grid-row: 2; /* Plassering på rutenettet */
+}
+
+/* Stiler for lenkene */
+#home{
+    padding-right: 550px; /* plassering på knapp, endret posisjonen til knapp lenger til venstre*/
+}
+
+#contact{
+   padding-left: 550px; /* plassering på knapp, endret posisjonen til knapp lenger til høyre*/
+   color: yellow; /* Tekstfarge */
+   text-decoration: underline; /* Understreking */
+}
+
+/* Stiler for overskrift */
+h1{
+    display: flex; /* Bruker flex-boksen for sentrering */
+    justify-content: center; /* Sentrer innholdet */
+    color: white; /* Tekstfarge */
+    letter-spacing: 0.2cap; /* Bokstavavstand */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Skrifttype */
+}
+
+/* Stiler for lenker */
+a{
+    text-decoration: none; /* Fjerner understrek */
+    color: rgb(255, 255, 255); /* Tekstfarge */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial; /* Skrifttype */
+}
+
+/* Stiler for hovedteksten */
+.main-text{
+    color: black; /* Tekstfarge */
+    display: flex; /* Bruker flex-boksen */
+    justify-content: center; /* Sentrer innholdet */
+    font-size: 25px; /* Skriftstørrelse */
+    position: relative; /* Relativ posisjonering */
+    top: 100px; /* Avstand fra toppen */
+    left: 150px; /* Avstand fra venstre */
+}
+
+/* Stiler for tekst 1*/
+#t1{
+    position: relative; /* Relativ posisjonering */
+    right: 30px; /* Avstand fra høyre */
+    top: 10px; /* Avstand fra toppen */
+}
+
+/* Stiler for tekst 2 */
+#t2{
+    position: relative; /* Relativ posisjonering */
+    right: 160px; /* Avstand fra høyre */
+    color: blue; /* Tekstfarge */
+    font-size: 25px; /* Skriftstørrelse */
+    text-decoration: underline; /* Understreking */
+}
+
+/* Stiler for foten */
+footer{
+    position: relative; /* Relativ posisjonering */
+    top: 289px; /* Avstand fra toppen */
+    right: 0px; /* Avstand fra høyre */
+    color: black; /* Tekstfarge */
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sidetittel -->
+    <title>Mat mafian</title>
+    <!-- Lenke til ekstern css fil -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Navigasjonbar-->
+    <div class="navbar">
+        <h1>Matmafian</h1>
+        <nav>
+            <a id="home" href="">Hjem</a>
+            <a id="contact" href="kontakt.html">Kontakt</a>
+        </nav>
+    </div>
+
+
+    <!-- En klasse til bilder-->
+    <div class="bilder">
+        <!-- .. er for å gå ut av mappen i file path-->
+        <img id="Burger" src="../Bilder/bilde1.jpg"> <!-- file path til bilde-->
+        <img id="Kebab" src="../bilder/Bilde2.jpg"> <!-- file path til bilde-->
+        <img id="Pizza" src="../bilder/Bilde3.jpg"> <!-- file path til bilde-->
+    </div>
+
+    <!-- klasse for burgerreview meny-->
+    <div class="burgerreview">
+        <!-- Burgerreview dropdown meny -->
+        <input type="text" name="Kommentar" id="kommentarBurger">
+        <select class="review" id="reviewBurger">
+            <option>Velg rating</option>
+            <option value="0/10">0/10</option> <!-- option i dropdown meny-->
+            <option value="1/10">1/10</option> <!-- option i dropdown meny-->
+            <option value="2/10">2/10</option> <!-- option i dropdown meny-->
+            <option value="3/10">3/10</option> <!-- option i dropdown meny-->
+            <option value="4/10">4/10</option> <!-- option i dropdown meny-->
+            <option value="5/10">5/10</option> <!-- option i dropdown meny-->
+            <option value="6/10">6/10</option> <!-- option i dropdown meny-->
+            <option value="7/10">7/10</option> <!-- option i dropdown meny-->
+            <option value="8/10">8/10</option> <!-- option i dropdown meny-->
+            <option value="9/10">9/10</option> <!-- option i dropdown meny-->
+            <option value="10/10">10/10</option> <!-- option i dropdown meny-->
+        </select>
+
+        <!-- knapp for å legge kommentaren og rating på nettsiden-->
+        <button onclick="Reviewburger()">Submit</button>
+
+        <!-- sted for både reivew og kommentaren skal komme-->
+        <div id="burgerResponse"></div>
+    </div>
+
+    <!-- klasse for kebabreview meny-->
+    <div class="kebabreview">
+        <!-- kebabreview dropdown meny-->
+        <input type="text" name="Kommentar" id="kommentarKebab">
+        <select class="review" id="reviewKebab">
+            <option>Velg rating</option>
+            <option value="0/10">0/10</option> <!-- option i dropdown meny-->
+            <option value="1/10">1/10</option> <!-- option i dropdown meny-->
+            <option value="2/10">2/10</option> <!-- option i dropdown meny-->
+            <option value="3/10">3/10</option> <!-- option i dropdown meny--> 
+            <option value="4/10">4/10</option> <!-- option i dropdown meny-->
+            <option value="5/10">5/10</option> <!-- option i dropdown meny-->
+            <option value="6/10">6/10</option> <!-- option i dropdown meny-->
+            <option value="7/10">7/10</option> <!-- option i dropdown meny-->
+            <option value="8/10">8/10</option> <!-- option i dropdown meny-->
+            <option value="9/10">9/10</option> <!-- option i dropdown meny--> 
+            <option value="10/10">10/10</option> <!-- option i dropdown meny--> 
+        </select>
+
+        <!-- knapp for å legge kommentaren og rating på nettsiden-->
+        <button onclick="Reviewkebab()">Submit</button>
+
+        <!-- sted for både reivew og kommentaren skal komme-->
+        <div id="kebabResponse"></div>
+    </div>
+    
+    <!-- klasse for pizzareview meny-->
+    <div class="pizzareview">
+
+        <!-- pizzareview dropdown meny -->
+        <input type="text" name="Kommentar" id="kommentarPizza">
+        <select class="review" id="reviewPizza">
+            <option>Velg rating</option>
+            <option value="0/10">0/10</option> <!-- option i dropdown meny-->
+            <option value="1/10">1/10</option> <!-- option i dropdown meny-->
+            <option value="2/10">2/10</option> <!-- option i dropdown meny-->
+            <option value="3/10">3/10</option> <!-- option i dropdown meny-->
+            <option value="4/10">4/10</option> <!-- option i dropdown meny-->
+            <option value="5/10">5/10</option> <!-- option i dropdown meny-->
+            <option value="6/10">6/10</option> <!-- option i dropdown meny-->
+            <option value="7/10">7/10</option> <!-- option i dropdown meny-->
+            <option value="8/10">8/10</option> <!-- option i dropdown meny-->
+            <option value="9/10">9/10</option> <!-- option i dropdown meny-->
+            <option value="10/10">10/10</option> <!-- option i dropdown meny-->
+        </select>
+
+        <!-- knapp for å legge kommentaren og rating på nettsiden-->
+        <button onclick="Reviewpizza()">Submit</button>
+
+        <!-- sted for både reivew og kommentaren skal komme-->
+        <div id="pizzaResponse"></div>
+    </div>
+
+    <footer>
+        <!-- Alle rettigheter forbeholdt merke -->
+        <p>&copy; 2024 Mat Mafia. All rights reserved.</p>
+    </footer> 
+
+    <!-- Lenke til ekstern JavaScript-fil -->
+    <script src="java.js"></script>
+</body> 
+</html>
